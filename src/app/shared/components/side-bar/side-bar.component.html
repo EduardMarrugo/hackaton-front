@@ -1,0 +1,19 @@
+<p-sidebar [(visible)]="sideBarService.visible">
+   
+  <ng-template pTemplate="header">
+    <h2 class="sideBar-header">COOSALUD</h2>
+  </ng-template>
+   
+  <ng-template pTemplate="content"
+    ><p-menu [model]="items"></p-menu
+  ></ng-template>
+   
+  <ng-template pTemplate="footer">
+    <p-button
+      styleClass="w-full"
+      routerLink="/auth/login"
+      (click)="sideBarService.visible = false"
+      label="Cerrar sesión"
+    ></p-button>
+  </ng-template>
+</p-sidebar>

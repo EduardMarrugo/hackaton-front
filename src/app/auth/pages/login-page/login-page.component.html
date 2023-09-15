@@ -1,0 +1,45 @@
+<div class="justify-content-center align-content-center w-full h-full p-5 mt-6">
+  <p-card
+    header="COOSALUD"
+    subheader="En Pos de tu bienestar"
+    [style]="{ width: '520px' }"
+    styleClass="p-4 pb-6"
+  >
+    <!-- <ng-template pTemplate="header">
+      <img alt="Card" src="" />
+    </ng-template> -->
+    <form class="flex flex-column p-4 form">
+      <div class="field">
+        <input
+          formControlName="Email"
+          id="firstname1"
+          type="email"
+          placeholder="Usuario"
+          class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+        />
+      </div>
+
+      <div class="field">
+        <input
+          formControlName="Password"
+          placeholder="Contraseña"
+          id="lastname1"
+          type="password"
+          class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+        />
+      </div>
+    </form>
+    <ng-template pTemplate="footer">
+      <p-button
+        routerLink="/users/list"
+        class=""
+        type="submit"
+        label="Ingresar"
+        styleClass="p-button-warning"
+      >
+      </p-button>
+    </ng-template>
+  </p-card>
+</div>
+
+<!-- <p-toast></p-toast> -->

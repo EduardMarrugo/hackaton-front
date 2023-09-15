@@ -1,0 +1,18 @@
+<p-menubar styleClass="px-4 py-2">
+  <ng-template pTemplate="start">
+    <div class="flex justify-content-center align-items-center">
+      <i
+        class="pi pi-align-justify text-white mr-2"
+        (click)="sideBarService.visible = true"
+      >
+      </i>
+      <h2 class="text-white">COOSALUD</h2>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="end">
+    <div class="flex justify-content-center align-items-center">
+      <i class="pi pi-user text-white" style="font-size: 1.8rem"></i>
+      <p class="ml-2 mt-2 text-white">Nombres y apellido</p>
+    </div>
+  </ng-template>
+</p-menubar>

@@ -1,0 +1,67 @@
+<div class="flex flex-column">
+  <h2>Detalles de registro</h2>
+  <form
+    autocomplete="off"
+    class="flex flex-column"
+    (ngSubmit)="createUser()"
+    [formGroup]="createUserForm"
+  >
+    <div #personName class="grid grid-nogutter">
+      <div class="field col-12">
+        <label for="firstName">Nombre Completo</label>
+        <input
+          formControlName="Name"
+          pInputText
+          id="firstName"
+          type="text"
+          placeholder="Nombres"
+          class="input focus:border-primary h-3rem w-full"
+        />
+      </div>
+    </div>
+    <div class="grid grid-nogutter">
+      <div class="field col-12 p-2">
+        <label for="email">Email</label>
+        <input
+          formControlName="Email"
+          pInputText
+          id="email"
+          type="email"
+          placeholder="mail@mail.com"
+          class="input focus:border-primary h-3rem w-full"
+        />
+      </div>
+    </div>
+
+    <div class="grid grid-nogutter">
+      <div class="field col-12">
+        <label for="email">Contraseña</label>
+        <input
+          formControlName="Password"
+          pInputText
+          id="password"
+          type="password"
+          placeholder="Una mayuscula, una minuscula y 8 caracteres"
+          class="input focus:border-primary h-3rem w-full"
+        />
+      </div>
+      <div class="field col-12">
+        <label for="phone">Repetir Contraseña</label>
+        <input
+          formControlName="RepeatPassword"
+          pInputText
+          id="repetirPassword"
+          type="password"
+          placeholder="Una mayuscula, una minuscula y 8 caracteres"
+          class="input focus:border-primary h-3rem w-full"
+        />
+      </div>
+    </div>
+
+    <p-button
+      label="Registrar usuario"
+      type="submit"
+      styleClass="bg-hkgreen mx-1"
+    ></p-button>
+  </form>
+</div>
